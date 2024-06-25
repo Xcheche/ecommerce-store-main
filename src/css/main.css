@@ -569,7 +569,7 @@ select, input {
     width: 100%;
     overflow: hidden;
     background-color: black;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 10px 0;
     margin: auto;
     color: white;
