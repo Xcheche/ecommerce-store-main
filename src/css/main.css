@@ -562,3 +562,32 @@ select, input {
     font-size: 10px;
   }
 }
+
+
+/* marquese */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    margin: auto;
+    color: white;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+/* 
+end of marquese */
