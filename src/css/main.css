@@ -591,3 +591,11 @@ select, input {
 }
 /* 
 end of marquese */
+
+/* 
+events */
+.event{
+    text-align: center;
+}
+
+/* end of events */
