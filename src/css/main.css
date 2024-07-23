@@ -599,3 +599,19 @@ events */
 }
 
 /* end of events */
+
+
+/* Digital Clock Styles */
+.clock {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 200px; /* Adjust as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}

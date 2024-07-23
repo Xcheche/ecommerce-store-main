@@ -28,11 +28,15 @@
                             <li class="nav-item"><a href="board.html">Board</a></li>
                         </ul>
                     </nav>
+                    
+                    
                     <a href="./cart.html"><img class="cart" src="./images/header/cart.svg"></a>
                     <div class="toggle"><i class="fa fa-bars"></i></div>
                 </div>
             </div>
         </div>
+
+
 
 <!--Marquese-->
                   <div class="marquee-container">
@@ -42,7 +46,27 @@
     </div>
     <!--End of Marquese-->
 
+                    <!--Clock-->
+<div class="clock" id="clock"></div>
 
+<!--Clock-->
+
+<script>
+    // clock
+
+function updateClock() {
+    const clock = document.getElementById('clock');
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // Initial call to display clock immediately
+// end of clock
+</script>
 
         <div class="headerimg">
             <h1>If you have everything under control, you're not moving fast enough!</h1>
@@ -67,6 +91,7 @@
                 </div>
             </div>
         </div>
+
         <div class="small-container">
             <h2>Hot Releases</h2>
             <div class="line1"></div>
@@ -376,6 +401,7 @@
                 </div>
             </div>
         </div>
+        
         <script src="./src/js/script.js"></script>
     </body>
 </html>

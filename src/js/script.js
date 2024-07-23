@@ -50,3 +50,6 @@ smallImg[2].onclick = function () {
 smallImg[3].onclick = function () {
     prodImg.src = smallImg[3].src;
 }
+
+
+
